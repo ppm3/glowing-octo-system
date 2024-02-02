@@ -1,0 +1,125 @@
+{
+  "info": {
+    "_postman_id": "f126b299-218e-4d15-add7-008687193b8a",
+    "name": "relish-cc",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "194476"
+  },
+  "item": [
+    {
+      "name": "Ping",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/ping",
+          "host": ["{{url}}"],
+          "path": ["ping"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "HealthCheck",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/health-check",
+          "host": ["{{url}}"],
+          "path": ["health-check"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Photos",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{xapikey}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{url}}/{{v}}/external-api/photos",
+          "host": ["{{url}}"],
+          "path": ["{{v}}", "external-api", "photos"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Photo by Id",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{xapikey}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{url}}/{{v}}/external-api/photos/19",
+          "host": ["{{url}}"],
+          "path": ["{{v}}", "external-api", "photos", "19"],
+          "query": [
+            {
+              "key": "",
+              "value": null
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Photos by filter",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{xapikey}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{url}}/{{v}}/external-api/photos?album.title=quidem",
+          "host": ["{{url}}"],
+          "path": ["{{v}}", "external-api", "photos"],
+          "query": [
+            {
+              "key": "title",
+              "value": "repudiandae%20iusto",
+              "disabled": true
+            },
+            {
+              "key": "album.title",
+              "value": "quidem"
+            },
+            {
+              "key": "album.user.email",
+              "value": "sincere@april.biz",
+              "disabled": true
+            },
+            {
+              "key": "offset",
+              "value": "100",
+              "disabled": true
+            },
+            {
+              "key": "limit",
+              "value": "100",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

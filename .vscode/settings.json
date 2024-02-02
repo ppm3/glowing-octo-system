@@ -1,0 +1,18 @@
+{
+  "cSpell.words": [
+    "accusamus",
+    "beatae",
+    "jsonplaceholder",
+    "molestiae",
+    "quidem",
+    "xstestx"
+  ],
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "typescript.format.enable": true,
+  "files.autoSave": "onFocusChange", // optional but recommended
+  "vs-code-prettier-eslint.prettierLast": true,
+  "eslint.codeActionsOnSave.rules": ["*semi*"]
+}
