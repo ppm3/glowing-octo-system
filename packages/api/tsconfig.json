@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./build",
+    "module": "commonjs",
+    "noEmit": false,
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@/*": ["src/*"],
+      "@fixtures/*": ["src/fixtures/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "__tests__/*.ts"],
+  "parserOptions": {
+    "project": ["./.eslintrc.js", "*.ts"]
+  },
+  "exclude": [
+    "node_modules",
+    "./build",
+    "__tests__",
+    "jest.config.js",
+    "tsconfig.eslint.json",
+    ".eslintrc.js"
+  ],
+  "files": [
+    "src/fixtures/jsonplaceholder/photos.json",
+    "src/fixtures/jsonplaceholder/users.json",
+    "src/fixtures/jsonplaceholder/albums.json",
+    "src/fixtures/process/album_user.json",
+    "src/fixtures/api_response/photo.json",
+    "src/fixtures/api_response/photos.json"
+  ]
+}

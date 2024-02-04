@@ -1,0 +1,20 @@
+{
+  "name": "@rcc-monorepo/api",
+  "version": "1.0.0",
+  "main": "dist/server.js",
+  "packageManager": "yarn@4.0.2",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node build/server.js",
+    "start:dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/server.ts",
+    "test": "jest --no-cache --config jest.config.js --verbose",
+    "test:coverage": "jest --coverage --verbose",
+    "lint": "eslint . --ext .ts"
+  },
+  "devDependencies": {
+    "rcc-monorepo": "workspace:^"
+  },
+  "dependencies": {
+    "rcc-monorepo": "workspace:^"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Local API Server",
+      "type": "node",
+      "request": "launch",
+      "args": ["${relativeFile}"],
+      "runtimeArgs": ["-r", "ts-node/register", "src/server.ts"],
+      "cwd": "${workspaceRoot}/packages/api",
+      "internalConsoleOptions": "openOnSessionStart"
+    },
+    {
+      "name": "API Debug Jest Tests",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": ["--inspect-brk", "${workspaceRoot}/node_modules/.bin/jest", "--runInBand", "--coverage", "false"],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceRoot}/packages/api",
+      "internalConsoleOptions": "neverOpen"
+    }
+  ]
+}

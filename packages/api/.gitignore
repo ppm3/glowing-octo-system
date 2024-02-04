@@ -1,0 +1,74 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore yarn.lock file
+yarn.lock
+
+# Ignore .pnp.js file (Yarn Plug'n'Play)
+.pnp.js
+
+# Ignore .yarn directory (Yarn cache)
+.yarn/
+
+# Ignore .eslintcache directory (ESLint cache)
+.eslintcache/
+
+# Ignore .vscode directory (Visual Studio Code settings)
+.vscode/
+
+# Ignore .idea directory (JetBrains IDE settings)
+.idea/
+
+# Ignore .DS_Store files (macOS file system metadata)
+.DS_Store
+
+# Ignore .env files (environment variables)
+.env*
+
+# Ignore logs directory
+logs/
+
+# Ignore dist directory (built output)
+dist/
+
+# Ignore coverage directory (test coverage reports)
+coverage/
+
+# Ignore .nyc_output directory (NYC coverage reports)
+.nyc_output/
+
+# Ignore .cache directory (cache files)
+.cache/
+
+# Ignore .husky directory (Husky Git hooks)
+.husky/
+
+# Ignore .yarnrc.yml file (Yarn configuration)
+.yarnrc.yml
+
+# Ignore .npmrc file (npm configuration)
+.npmrc
+
+# Ignore .prettierrc file (Prettier configuration)
+.prettierrc
+
+# Ignore .eslintrc file (ESLint configuration)
+.eslintrc
+
+# Ignore .babelrc file (Babel configuration)
+.babelrc
+
+# Ignore .editorconfig file (EditorConfig configuration)
+.editorconfig
+
+# Ignore .gitattributes file (Git attributes)
+.gitattributes
+
+# Ignore .gitkeep files (empty directories)
+**/.gitkeep
+
+tmp/
+tmp/**/*
+
+build/*
+tsconfig.tsbuildinfo
