@@ -7,42 +7,20 @@
     "packages/*"
   ],
   "scripts": {
-    "start:api": "yarn workspace @rcc-monorepo/api start",
+    "start:api": "yarn workspace @rcc-monorepo/api start:prod",
     "start:client": "yarn workspace @rcc-monorepo/client start",
     "start": "concurrently \"yarn start:api\" \"yarn start:client\"",
+    "build:api": "yarn workspace @rcc-monorepo/api build",
     "test:api": "yarn workspace @rcc-monorepo/api test",
     "test:client": "yarn workspace @rcc-monorepo/client test",
     "coverage:api": "yarn workspace @rcc-monorepo/api test:coverage"
   },
   "dependencies": {
-    "@rcc-monorepo/client": "0.1.0",
-    "axios": "^1.6.7",
-    "bootstrap": "^5.3.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.1",
-    "express": "^4.18.2",
-    "react-bootstrap": "^2.10.0"
+    "@rcc-monorepo/api": "0.1.0",
+    "@rcc-monorepo/client": "0.1.0"
   },
   "devDependencies": {
-    "@eslint/create-config": "^0.4.6",
-    "@jest/globals": "^29.7.0",
-    "@types/cors": "^2.8.17",
-    "@types/express": "^4.17.21",
-    "@types/jest": "^29.5.12",
-    "@types/node": "^20.11.16",
-    "@typescript-eslint/eslint-plugin": "^6.20.0",
-    "@typescript-eslint/parser": "^6.20.0",
-    "eslint": "^8.56.0",
-    "eslint-config-standard-with-typescript": "^43.0.1",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-n": "^16.6.2",
-    "eslint-plugin-promise": "^6.1.1",
-    "jest": "^29.7.0",
-    "nodemon": "^3.0.3",
-    "prettier": "^3.2.5",
-    "ts-jest": "^29.1.2",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "@rcc-monorepo/api": "0.1.0"
   },
   "_moduleAliases": {
     "@": "dist"
