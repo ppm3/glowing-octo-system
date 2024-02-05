@@ -1,4 +1,4 @@
-# Full Time Force - Test
+# Octo API 
 
 This repository is a monorepo containing both the api and client applications for External API ETL. It's structured to facilitate the development, testing, and deployment of both parts of the project in a cohesive manner.
 
