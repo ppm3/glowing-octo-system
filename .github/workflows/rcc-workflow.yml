@@ -4,9 +4,13 @@ on:
   push:
     branches:
       - main
+      - env-api-staging
+      - env-client-staging
   pull_request:
     branches:
       - main
+      - env-api-staging
+      - env-client-staging
 
 jobs:
   api-test:
