@@ -72,7 +72,6 @@ Before running the server, make sure to set up the environment variables by crea
 ```bash
 ; Application  service
 API_PORT  =  NUMBER
-API_VERSION  =  NUMBER
 API_LOG_LEVEL  =  STRING
 API_X_API_KEY  =  STRING
 
@@ -144,3 +143,5 @@ npm  run  build
 ## Documentation
 
 Includes a Postman collection designed for ease of use and accessibility. The collection contains pre-configured requests for all the API endpoints in this project: [Collection](documentation/postman/relish-cc.postman_collection.json) and [EnvVars](documentation/postman/nucserver-local.postman_environment.json)
+
+Power by :battery: [PPM3](https://github.com/ppm3)

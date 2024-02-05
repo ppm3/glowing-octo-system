@@ -21,20 +21,20 @@ export const RouterDefinition = (
   });
 
   // v1
-  // /v1/external-api/photos
+  // /external-api/photos
   router.get(
     "/external-api/photos",
     (req, res, next) => apiKeyMiddleware(req, res, next, apiConfig),
     async (req, res) =>
       photoController(req, res, logger, appDependencies.photoService)
   );
-  // /v1/external-api/photos/:photoId
-  router.get("/external-api/photos/:photoId", 
+  // /external-api/photos/:photoId
+  router.get("/external-api/photos/:photoId",
     (req, res, next) => apiKeyMiddleware(req, res, next, apiConfig),
     async (req, res) =>
       photoController(req, res, logger, appDependencies.photoService)
-);
-  router.use(`/v${apiConfig.version}`, router);
+  );
+  router.use('/v1', router);
 
   // Add 404 status if nothing matches with the definitions
   router.use((_, res: Response) => {

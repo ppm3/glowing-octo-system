@@ -1,0 +1,92 @@
+/* styles.css */
+
+/* Override Bootstrap modal styles */
+.modal-content {
+  border: none;
+}
+
+.modal-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px;
+  border-bottom: 2px solid #0056b3;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-footer {
+  border-top: 2px solid #0056b3;
+  padding: 15px;
+}
+
+/* Customize modal close button */
+.modal-header .close {
+  color: #fff;
+}
+
+/* Add shadow to the modal */
+.modal-content {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Override Bootstrap button styles */
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  color: #fff;
+}
+
+.modal-body h4 {
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.modal-body h5 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.modal-body p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.modal-body p span {
+  font-weight: bold;
+}
+
+.modal-body h5 {
+  font-size: 18px;
+  color: #58546e;
+  margin: 10px 0;
+}
+
+.modal-body p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.modal-body p span {
+  font-weight: bold;
+}
+
+.modal-body img {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  margin: auto;
+  display: block;
+}

@@ -1,0 +1,112 @@
+/* styles.css */
+
+/* Table Styles */
+#tableContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+#tableContainer .table-container {
+  margin: 20px;
+}
+
+#tableContainer .table {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#tableContainer .table th,
+#tableContainer .table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-size: 0.8em;
+}
+
+#tableContainer .table th {
+  background-color: #f2f2f2;
+}
+
+#tableContainer .table td.emptyResults {
+  text-align: center;
+  font-size: 1.2em;
+  color: #6c757d;
+}
+
+/* Pagination Styles */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-item {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination-item.active {
+  font-weight: bold;
+}
+
+.pagination-item:hover {
+  text-decoration: underline;
+}
+
+/* search form */
+#searchFormContainer {
+  margin-bottom: 20px;
+}
+
+/* Style the form inputs and button */
+#searchFormContainer .form-control {
+  margin-bottom: 10px;
+}
+
+#searchFormContainer .btn-primary {
+  margin-top: 10px;
+}
+
+#searchFormContainer .form-label {
+  font-weight: bold;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.footer a {
+  color: #6c757d;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+h1#mainTitle {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
