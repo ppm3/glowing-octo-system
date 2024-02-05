@@ -1,0 +1,10 @@
+node_modules
+.vscode
+.idea
+.nyc_output
+Archive.zip
+.DS_Store
+build
+coverage
+.yan
+.github
