@@ -11,7 +11,6 @@ dotenv.config();
 export const config = {
     api: {
         port: Number(process.env.API_PORT),
-        version: String(process.env.API_VERSION),
         logLevel: String(process.env.API_LOG_LEVEL || "info"),
         xApiKey: String(process.env.API_X_API_KEY),
     } as ApiConfig,

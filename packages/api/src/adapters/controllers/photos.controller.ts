@@ -45,7 +45,7 @@ export async function photoController(
             res.status(HttpStatusCode.NoContent).json([]);
             return Promise.resolve();
         }
-
+        res.set("Access-Control-Expose-Headers", "*");
         res.set('x-pagination-limit', response.pagination.limit.toString());
         res.set('x-pagination-offset', response.pagination.offset.toString());
         res.set('x-pagination-total', response.pagination.total.toString());

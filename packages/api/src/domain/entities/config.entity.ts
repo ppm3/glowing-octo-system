@@ -1,6 +1,5 @@
 export interface ApiConfig {
     port: number;
-    version: string;
     xApiKey: string;
     logLevel: string;
 }
