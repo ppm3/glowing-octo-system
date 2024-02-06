@@ -21,7 +21,7 @@ RUN npm cache clean --force
 RUN npm install
 
 COPY packages/${BUILD_CONTEXT}/tsconfig.json ./
-COPY packages/${BUILD_CONTEXT}/src ./src
+COPY ./packages/${BUILD_CONTEXT}/src ./src
 
 RUN npm run build 
 
