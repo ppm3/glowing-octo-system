@@ -8,7 +8,7 @@ RUN apk add --no-cache \
 
 ARG BUILD_CONTEXT 
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
 RUN echo "Building ${BUILD_CONTEXT}"
 RUN echo "packages/${BUILD_CONTEXT}/package*.json"
@@ -28,7 +28,7 @@ RUN npm run build
 # Create a lightweight production image
 FROM node:14 as production
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
 # ARGs for environment variables
 ARG API_PORT
@@ -57,8 +57,8 @@ ENV LOCAL_CACHE_TTL ${LOCAL_CACHE_TTL}
 ENV LOCAL_CACHE_PATH ${LOCAL_CACHE_PATH}
 
 # Copy only compiled output and dependencies from builder stage
-COPY --from=builder /usr/src/app/build ./build
-COPY --from=builder /usr/src/app/node_modules ./node_modules
+COPY --from=builder /app/build ./build
+COPY --from=builder /app/node_modules ./node_modules
 
 EXPOSE ${API_PORT}
 
