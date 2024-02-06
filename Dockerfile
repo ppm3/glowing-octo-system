@@ -13,7 +13,7 @@ WORKDIR /usr/src/app
 RUN echo "Building ${BUILD_CONTEXT}"
 RUN echo "packages/${BUILD_CONTEXT}/package*.json"
 
-COPY ./packages/${BUILD_CONTEXT}/package.json ./
+COPY packages/${BUILD_CONTEXT}/package.json ./
 
 RUN cat package.json
 RUN rm -rf node_modules
